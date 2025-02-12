@@ -55,49 +55,6 @@ nav ul li a:hover {
     color: #002147;
 }
 
-/* styles.css */
-.hero {
-    background-image: url('../assets/graduands.webp'); 
-    background-size: cover; 
-    background-position: center; 
-    color: white; 
-    height: 100vh; 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; 
-    text-align: center; 
-    padding: 0 20px; 
-    position: relative;
-}
-
-.hero h1 {
-    font-size: 4rem; 
-    margin: 0;
-    font-weight: bold; 
-}
-
-.hero p {
-    font-size: 1.5rem; 
-}
-
-.btn {
-    display: inline-block;
-    padding: 1px 12px;
-    background-color: #ff6600; /* Button color */
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    margin: 20px auto;
-    transition: background 0.3s ease;
-    text-align: center;
-
-}
-
-.btn:hover {
-    background-color: #e65c00;
-}
-
 .footer{
     background-color: #002147; 
     color: white;
@@ -183,46 +140,75 @@ nav ul li a:hover {
     }
 }
 
-
-/* Page Preview Section */
-.page-previews {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 40px;
-    padding: 20px;
-}
-
-.preview-card {
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
     text-align: center;
+    background-color: #ffffff;
 }
 
-.preview-card h3 {
-    font-size: 24px;
+.contact-section h2 {
+    font-size: 36px;
     color: #002147;
+    margin-bottom: 20px;
 }
 
-.preview-card p {
-    font-size: 16px;
+.contact-section p {
+    font-size: 18px;
     color: #555;
-    margin: 10px 0;
+    margin-bottom: 40px;
 }
 
-.preview-card .btn {
-    padding: 10px 20px;
+/* Contact Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 16px;
+    color: #002147;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
     background-color: #ff6600;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.preview-card .btn:hover {
-    background-color: #e55d00;
+.contact-form button:hover {
+    background-color: #e65c00;
+}
+
+/* Map Section */
+.map-section {
+    margin-top: 60px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
 }
