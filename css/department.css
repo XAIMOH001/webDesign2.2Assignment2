@@ -55,49 +55,6 @@ nav ul li a:hover {
     color: #002147;
 }
 
-/* styles.css */
-.hero {
-    background-image: url('../assets/graduands.webp'); 
-    background-size: cover; 
-    background-position: center; 
-    color: white; 
-    height: 100vh; 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; 
-    text-align: center; 
-    padding: 0 20px; 
-    position: relative;
-}
-
-.hero h1 {
-    font-size: 4rem; 
-    margin: 0;
-    font-weight: bold; 
-}
-
-.hero p {
-    font-size: 1.5rem; 
-}
-
-.btn {
-    display: inline-block;
-    padding: 1px 12px;
-    background-color: #ff6600; /* Button color */
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    margin: 20px auto;
-    transition: background 0.3s ease;
-    text-align: center;
-
-}
-
-.btn:hover {
-    background-color: #e65c00;
-}
-
 .footer{
     background-color: #002147; 
     color: white;
