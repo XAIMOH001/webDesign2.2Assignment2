@@ -35,7 +35,7 @@ header{
 nav ul{
     list-style: none;
     padding: 15px;
-    margin: 0;
+    margin: 15px;
     display: flex;
 }
 
@@ -164,6 +164,7 @@ nav ul li a:hover {
 .about-text h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .about-text p {
@@ -175,6 +176,7 @@ nav ul li a:hover {
 .about-image {
     flex: 1;
     padding: 20px;
+    margin-top: 20px;
 }
 
 .about-image img {
