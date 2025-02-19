@@ -177,18 +177,6 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.about-image {
-    flex: 1;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.about-image img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
 
 /* Vision and Mission Section */
 .vision-mission {
