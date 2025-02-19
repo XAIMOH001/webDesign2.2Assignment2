@@ -7,107 +7,111 @@
     <title>Login Page </title>
     <link rel="stylesheet" href="login.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-    * {
-        font-family: Calibri, Helvetica, sans-serif;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    body {
-        background-color: #f4f4f4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
 
-    .login-container {
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 350px;
-        text-align: center;
-        border: 2px solid #adacab; /* Light gray border */
-    }
+        .login-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            text-align: center;
+        }
 
-    h1 {
-        margin-bottom: 20px;
-        color: #002147; /* Dark blue */
-    }
+        h1 {
+            margin-bottom: 20px;
+        }
 
-    .login-container label {
-        display: block;
-        text-align: left;
-        margin: 10px 0 5px;
-        font-weight: bold;
-        color: #002147; /* Dark blue */
-    }
+        .login-container label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
 
-    .login-container input {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc; /* Light gray */
-        border-radius: 5px;
-    }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-    .remember-forgot {
-        display: flex;
-        justify-content: space-between;
-        font-size: 14px;
-        color: #555; /* Darker gray */
-    }
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
 
-    .login-btn {
-        width: 100%;
-        padding: 10px;
-        background: #002147; /* Dark blue */
-        border: none;
-        color: white;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 10px;
-        font-weight: bold;
-    }
+        .login-btn, .cancel-btn{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
 
-    .cancel-btn {
-        width: 100%;
-        padding: 10px;
-        background: #dc3545; /* Red */
-        border: none;
-        color: white;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 10px;
-        font-weight: bold;
-    }
+        .login-btn {
+            background: #002147;
+        }
 
-    .login-btn:hover {
-        background: #adacab; /* Light gray */
-        color: #002147; /* Dark blue */
-    }
+        .cancel-btn {
+            background: #adacab;
+        }
 
-    .cancel-btn:hover {
-        background: #adacab; /* Light gray */
-        color: #dc3545; /* Red */
-    }
+        .home-btn {
+            background: #002147;
+            width: 600px;
+            padding: 10px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
 
-    a {
-        text-decoration: none;
-        color: #002147; /* Dark blue */
-    }
+        }
 
-    a:hover {
-        color: #adacab; /* Light gray */
-    }
-</style>
+        .login-btn:hover, .cancel-btn:hover, .home-btn:hover {
+            opacity: 0.8;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        #forgetpass{
+            text-decoration: none;
+            color: #adacab;
+        }
+    </style>
 
 </head>
 
 <body>
+    <a href="index.html" class="home-btn">← Back to Home</a>
     <div class="login-container">
         <h1>Student Login</h1>
         <form action="#">
@@ -119,7 +123,7 @@
 
             <div class="remember-forgot">
                 <label><input type="checkbox"> Remember me</label>
-                <a href="#">Forgot password?</a>
+                <a href="#" id="forgetpass">Forgot password?</a>
             </div>
 
             <button type="submit" class="login-btn">Login</button>
