@@ -1,3 +1,7 @@
+*{
+    font-family: Calibri, Helvetica, sans-serif;
+}
+
 .logo-container{
     display: flex;
     align-items: center;
@@ -66,24 +70,24 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center; 
     text-align: center; 
-    padding: 0 20px; 
+    padding: 0; 
     position: relative;
 }
 
 .hero h1 {
-    font-size: 4rem; 
+    font-size: 21px; 
     margin: 0;
     font-weight: bold; 
 }
 
 .hero p {
-    font-size: 1.5rem; 
+    font-size: 21px; 
 }
 
 .btn {
     display: inline-block;
     padding: 1px 12px;
-    background-color: #adacab; 
+    background-color: #002147; 
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
@@ -95,7 +99,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: #002147;
+    background-color: #adacab;
 }
 
 .footer{
