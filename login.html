@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="login.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        * {
+        html {
             font-family: 'Poppins', sans-serif;
             box-sizing: border-box;
             margin: 0;
@@ -58,7 +58,8 @@
             font-size: 14px;
         }
 
-        .login-btn, .cancel-btn{
+        .login-btn,
+        .register-btn {
             width: 100%;
             padding: 10px;
             border: none;
@@ -75,14 +76,14 @@
             background: #002147;
         }
 
-        .cancel-btn {
+        .register-btn {
             background: #adacab;
         }
 
         .home-btn {
             background: #002147;
             width: 350px;
-            padding: 10px;
+            padding: 20px;
             border: none;
             color: white;
             border-radius: 5px;
@@ -91,10 +92,11 @@
             text-decoration: none;
             display: inline-block;
             text-align: center;
-
         }
 
-        .login-btn:hover, .cancel-btn:hover, .home-btn:hover {
+        .login-btn:hover,
+        .register-btn:hover,
+        .home-btn:hover {
             opacity: 0.8;
         }
 
@@ -102,7 +104,8 @@
             text-decoration: none;
             color: white;
         }
-        #forgetpass{
+
+        #forgetpass {
             text-decoration: none;
             color: #adacab;
         }
@@ -127,7 +130,8 @@
             </div>
 
             <button type="submit" class="login-btn">Login</button>
-            <button type="button" class="cancel-btn">Cancel</button>
+            <small>Don't have an Account? Register.</small>
+            <button type="button" class="register-btn" onclick="window.location.href='register.html';">Register</button>
         </form>
     </div>
 </body>
