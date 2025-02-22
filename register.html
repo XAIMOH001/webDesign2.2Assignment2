@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .login-container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .login-container label {
+      display: block;
+      text-align: left;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+    }
+
+    
+    .home-btn {
+            background: #002147;
+            width: 350px;
+            padding: 20px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+
+    .register-btn {
+      background: #adacab;
+    }
+
+    .home-btn, .login-btn {
+      background: #002147;
+    }
+
+    .btn:hover, .home-btn:hover, .register-btn:hover, .login-btn:hover {
+      opacity: 0.8;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .small-text {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #002147;
+    }
+
+    .small-text a {
+      text-decoration: underline;
+      color: #adacab;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="home-btn">← Back to Home</a>
+  <div class="login-container">
+    <h1>Student Registration</h1>
+    <form action="#">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter Username" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+      <label for="confirmpassword">Confirm Password:</label>
+      <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password" required>
+
+      <button type="submit" class="register-btn btn">Register</button>
+      <p class="small-text">
+        Already have an account? <a href="login.html">Login here</a>
+      </p>
+    </form>
+  </div>
+</body>
+</html>
