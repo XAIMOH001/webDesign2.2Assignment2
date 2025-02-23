@@ -59,12 +59,13 @@ nav ul li a:hover {
     display: none;
     font-size: 24px;
     cursor: pointer;
+    display: block;
 }
 
 /* RESPONSIVE DESIGN */
 @media screen and (max-width: 768px) {
     nav ul {
-        display: none; /* Hide menu by default */
+        display: none; 
         flex-direction: column;
         background-color: rgba(0, 33, 71, 0.95);
         position: absolute;
@@ -85,10 +86,6 @@ nav ul li a:hover {
 
     nav ul li {
         margin: 15px 0;
-    }
-
-    .menu-icon {
-        display: block;
     }
 }
 
