@@ -4,7 +4,7 @@ document.addEventListener("click", function (event) {
 
     // Check if the click is outside the navigation and menu icon
     if (!nav.contains(event.target) && !menuIcon.contains(event.target)) {
-        nav.classList.remove("active"); // Hide the menu
+        nav.classList.remove("active");
     }
 });
 
