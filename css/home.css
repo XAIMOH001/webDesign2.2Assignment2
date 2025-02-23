@@ -66,25 +66,29 @@ nav ul li a:hover {
     nav ul {
         display: none; /* Hide menu by default */
         flex-direction: column;
-        background-color: #002147;
+        background-color: rgba(0, 33, 71, 0.95);
         position: absolute;
-        top: 60px;
+        top: o;
         left: 0;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
+        margin-top: 40px;
+        width: 150px;
+        height: 100vh;
+        text-align: left;
+        padding: 20px;
+        z-index: 1000;
+        transition: transfom 0.07s ease-in-out;
     }
 
-    nav ul.active {
-        display: flex; /* Show menu when active */
+    nav.active ul {
+        display: flex;
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 15px 0;
     }
 
     .menu-icon {
-        display: block; /* Show the hamburger icon */
+        display: block;
     }
 }
 
