@@ -9,24 +9,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    // Get form data
-    $full_name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    // Get form data and prevent SQL injection
+    $full_name = $conn->real_escape_string($_POST['name']);
+    $email = $conn->real_escape_string($_POST['email']);
+    $message = $conn->real_escape_string($_POST['message']);
 
-    // Prepare and insert data
-    $sql = "INSERT INTO contact (full_name, email, message) VALUES ('$full_name', '$email', '$message')";
+    // Use prepared statement
+    $stmt = $conn->prepare("INSERT INTO contact (full_name, email, message) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $full_name, $email, $message);
 
-    if ($conn->query($sql) === TRUE) {
+    if ($stmt->execute()) {
         echo "Message sent successfully!";
     } else {
-        echo "Error: " . $conn->error;
+        echo "Error: " . $stmt->error;
     }
 
-    // Close connection
+    // Close connections
+    $stmt->close();
     $conn->close();
 } else {
-    echo "Invalid request.";
+    die("Invalid request. Expected POST method but received " . $_SERVER["REQUEST_METHOD"]);
 }
+
 ?>
 
