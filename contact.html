@@ -6,6 +6,257 @@
     <title>Contact Us - Maasai Mara University</title>
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER NAVIGATION */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002147;
+    padding: 15px 20px;
+    color: white;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo-container h1 {
+    font-size: 20px;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* HAMBURGER MENU */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none; 
+        flex-direction: column;
+        background-color: rgba(0, 33, 71, 0.95);
+        position: absolute;
+        top: o;
+        left: 0;
+        margin-top: 40px;
+        width: 150px;
+        height: 100vh;
+        text-align: left;
+        padding: 20px;
+        z-index: 1000;
+        transition: transfom 0.07s ease-in-out;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+}
+
+.footer{
+    background-color: #002147; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-section{
+    flex: 1;
+    padding: 10px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #adacab; 
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #adacab;
+}
+
+.socials{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.socials a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 8px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+    color: #002147;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}  
+
+.socials a:hover {
+    background-color: #adacab;
+    color: #002147;
+    transform: scale(1.1);
+}
+
+
+.copyright {
+    margin-top: 15px;
+    font-size: 14px;
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    color: #002147;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 16px;
+    color: #002147;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #adacab;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #adacab;
+}
+
+/* Map Section */
+.map-section {
+    margin-top: 60px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+    </style>
 </head>
 <body>
     <header>
@@ -37,8 +288,7 @@
 
         <!-- Contact Form -->
 
-        <form  class="contact-form" action="contact.php" method="POST">
-
+        <form class="contact-form" action="contact.php" method="POST">
             <div class="form-group">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" placeholder="Your full name" required>
