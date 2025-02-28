@@ -1,5 +1,6 @@
 <?php
-include 'db_connect.php'; // Include database connection
+//database connection
+include 'db_connect_contact.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = trim($_POST['name']);
